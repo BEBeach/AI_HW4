@@ -1,0 +1,11 @@
+Player,Turn,Move
+X,Start,"(2, 2)"
+O,Start,"(3, 2)"
+X,Move,"(3, 1)"
+O,Move,"(4, 2)"
+X,Move,"(3, 3)"
+O,Move,"(4, 3)"
+X,Move,"(2, 1)"
+O,Move,"(4, 1)"
+X,Move,"(2, 0)"
+O,Move,"(4, 0)"
