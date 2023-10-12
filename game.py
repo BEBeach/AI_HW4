@@ -82,19 +82,19 @@ class TicTacToe:
     # Checks if the game has ended, saves moves if game ended
     def end_condition(self):
         if self.has_won('X'):
-            game.save_moves('moves.csv')
-            game.finished = True
-            game.winner = 'X'
+            self.save_moves('moves.csv')
+            self.finished = True
+            self.winner = 'X'
             print("X Wins!")
         if self.has_won('O'):
-            game.save_moves('moves.csv')
-            game.finished = True
-            game.winner = 'O'
+            self.save_moves('moves.csv')
+            self.finished = True
+            self.winner = 'O'
             print("O Wins!")
         if self.is_full():
-            game.save_moves('moves.csv')
-            game.finished = True
-            game.winner = 'Tie'
+            self.save_moves('moves.csv')
+            self.finished = True
+            self.winner = 'Tie'
             print("Tie!")
         return False
 
