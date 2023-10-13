@@ -1,8 +1,8 @@
-Player,Turn,Move
-X,Start,"(3, 4)"
+Player,Turn,Move,Time,Nodes Generated
+X,Start,"(4, 3)"
 O,Start,"(3, 3)"
-X,Move,"(2, 3)"
-O,Move,"(2, 2)"
-X,Move,"(1, 2)"
-O,Move,"(1, 1)"
-X,Move,"(0, 1)"
+X,Move,"(3, 2)",0.012887239456176758,7
+O,Move,"(2, 2)",0.8193190097808838,6
+X,Move,"(2, 1)",0.020658254623413086,10
+O,Move,"(1, 1)",1.16099214553833,9
+X,Move,"(1, 0)",0.021450042724609375,13
