@@ -152,10 +152,8 @@ class TicTacToe:
         return best_row, best_col, nodes
 
 def opp_player(player):
-    if player == 'X':
-        return 'O'
-    else:
-        return 'X'
+    return 'O' if player == 'X' else 'X'
+
     
 def play_tic_tac_toe():
     game = TicTacToe()

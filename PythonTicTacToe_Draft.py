@@ -1,3 +1,4 @@
+# PLEASE SEE HW4.py
 import math
 
 # Constants for players
@@ -80,9 +81,8 @@ def minimax(board, depth, max_player, alpha, beta):
                     if beta <= alpha:
                         break
         return min_eval
-                                                                     # Everything above is the same as player 1 implementation
 
-# Function to find the best move for Player O
+# Function to find the best move for Player X
 def find_best_move():
     best_move = None
     best_eval = -math.inf
@@ -90,8 +90,8 @@ def find_best_move():
     for col in range(6):
         for row in range(5):
             if board[row][col] == ' ':
-                board[row][col] = PLAYER_O                           # Player X changed to Player O
-                eval = minimax(board, 4, False, -math.inf, math.inf) # Depth changed to 4
+                board[row][col] = PLAYER_X
+                eval = minimax(board, 2, False, -math.inf, math.inf)
                 board[row][col] = ' '
                 if eval > best_eval:
                     best_eval = eval
